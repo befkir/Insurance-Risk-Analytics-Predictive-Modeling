@@ -12,7 +12,7 @@ asyncssh==2.21.0
 atpublic==5.0
 attrs==25.3.0
 backcall==0.2.0
-backports.zoneinfo==0.2.1
+backports.zoneinfo; python_version < "3.9"
 billiard==4.2.1
 celery==5.5.3
 certifi==2025.6.15
