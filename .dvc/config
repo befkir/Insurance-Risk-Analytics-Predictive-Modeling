@@ -1,0 +1,4 @@
+[core]
+    remote = localstorage
+['remote "localstorage"']
+    url = /home/user/Documents/10x/dvc_store_for_insurance_project
