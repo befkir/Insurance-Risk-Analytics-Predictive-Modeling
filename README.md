@@ -78,8 +78,10 @@ pip install -r requirements.txt
 
 4. Run the script:
 
-- `cd Scripts`
-- `python3 convert_to_csv.py`
+```
+cd Scripts
+python3 convert_to_csv.py`
+```
 
 5. Run the Jupyter Notebook:
 
@@ -174,7 +176,3 @@ git push origin feature/your-feature-name
 
 5. Submit a Pull Request:
    Open a pull request on GitHub to merge your changes into the main branch.
-
-```
-
-```
