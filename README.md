@@ -2,6 +2,8 @@
 
 This repository contains the exploratory data analysis (EDA), project planning, and data versioning setup for an insurance portfolio analysis project. The main objective is to uncover risk and profitability patterns in the insurance dataset and ensure full reproducibility of results using Git, GitHub, and DVC.
 
+This project is a structured pipeline for preprocessing, analyzing, and visualizing a real-world insurance dataset using Python, pandas, matplotlib, seaborn, and other data science tools. It includes missing value handling, outlier detection, EDA (exploratory data analysis), and is integrated with DVC for dataset version control.
+
 ## 📌 Project Objectives
 
 - Analyze risk patterns in insurance claims and premiums.
@@ -40,11 +42,11 @@ Insurance-Risk-Analytics-Predictive-Modeling/
 ├── .vscode/                # Editor settings
 ├── utils/
 │   ├── __init__.py
-│   └── visualization.py #Draw
+│   └── visualization.py # Reusable plotting utilities
 ├── scripts/
 ├── src/
 ├── tests/                  # Unit tests
-├── output/                 # plot will be saved here
+├── output/                 # Saved plots and visual outputs
 ├── .dvc/                        # DVC internal config
 ├── .gitignore
 ├── README.md
@@ -83,6 +85,31 @@ pip install -r requirements.txt
 
 ```
 jupyter notebook
+```
+
+6. 📦 DVC Setup
+   This project uses DVC for dataset versioning and storage.
+
+🧱 Initial Setup (already done)
+
+```
+dvc init
+dvc add data/insurance_data.csv
+git add data/insurance_data.csv.dvc .gitignore
+git commit -m "Added Dataset"
+```
+
+🗃️ Set Local Remote
+
+```
+dvc remote add -d localstorage /home/user/Documents/10x/dvc_store_for_insurance_project
+```
+
+🚀 Push Data to Remote
+
+```
+dvc push
+```
 
 ### 🧰 Tools and Libraries
 
@@ -147,4 +174,7 @@ git push origin feature/your-feature-name
 
 5. Submit a Pull Request:
    Open a pull request on GitHub to merge your changes into the main branch.
+
+```
+
 ```
