@@ -38,6 +38,9 @@ Insurance-Risk-Analytics-Predictive-Modeling/
 ├── .github/                # GitHub workflows and CI
 │   └── workflows/
 ├── .vscode/                # Editor settings
+├── utils/
+│   ├── __init__.py
+│   └── visualization.py #Draw
 ├── scripts/
 ├── src/
 ├── tests/                  # Unit tests
@@ -71,11 +74,15 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-4. Run the Jupyter Notebook:
+4. Run the script:
+
+- `cd Scripts`
+- `python3 convert_to_csv.py`
+
+5. Run the Jupyter Notebook:
 
 ```
 jupyter notebook
-```
 
 ### 🧰 Tools and Libraries
 
@@ -96,14 +103,18 @@ Click the "Fork" button at the top right of the repository page.
 2. Clone Your Fork:
 
 ```
+
 git clone https://github.com/befkir/Insurance-Risk-Analytics-Predictive-Modeling
+
 ```
 
 3. Create a New Branch:
 
 ```
+
 git checkout -b feature/your-feature-name
 Make Your Changes:
+
 ```
 
 4. Implement your feature or fix the bug.
@@ -111,10 +122,13 @@ Make Your Changes:
 Commit and Push:
 
 ```
+
 git add .
 git commit -m "Description of your changes"
 git push origin feature/your-feature-name
+
 ```
 
 5. Submit a Pull Request:
    Open a pull request on GitHub to merge your changes into the main branch.
+```
