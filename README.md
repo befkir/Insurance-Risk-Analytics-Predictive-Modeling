@@ -113,6 +113,10 @@ dvc remote add -d localstorage /home/user/Documents/10x/dvc_store_for_insurance_
 dvc push
 ```
 
+```
+dvc stage add -n preprocess \ -d src/preprocessing.py -d data insurance_data.csv \ -o data/cleaned_data.csv \ python src/preprocessing.py
+```
+
 ### 🧰 Tools and Libraries
 
 The project utilizes the following tools and libraries:
