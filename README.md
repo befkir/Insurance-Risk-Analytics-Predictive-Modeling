@@ -92,6 +92,22 @@ The project utilizes the following tools and libraries:
 
 - Pandas: Data manipulation and analysis.
 
+## EDA Analysis Visualizations
+
+Here are sample outputs from the sentiment analysis project:
+
+### 1. Loss Ratio by province
+
+![Loss Ratio by province](output/loss_ratio_by_province.png)
+
+### 2. Correlation
+
+![Rating Comparison](output/correlation_matrix.png)
+
+### 3. Top Vehicle makes
+
+![Top Vehicle makes](output/top_vehicle_makes.png)
+
 ### 🤝 Contributing
 
 Contributions are welcome! If you'd like to contribute:
