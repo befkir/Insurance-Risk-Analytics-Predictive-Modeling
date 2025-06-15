@@ -1,3 +1,4 @@
-/data
+/data/insurance_data.csv
+/data/MachineLearningRating_v3.txt
 /venv
 __pycache__
